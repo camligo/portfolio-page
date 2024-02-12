@@ -1,0 +1,44 @@
+.contact {
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+
+    .form-text {
+      width: 50%;
+      margin-left: 50px;
+      align-self: stretch;
+    }
+}
+
+.form-input {
+  display: flex;
+}
+
+.socials {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      margin-inline: 20px;
+      font-size: 4rem;
+      font-weight: 400;
+    }
+}
