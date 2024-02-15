@@ -1,0 +1,16 @@
+.about, .projects, .contact, .skills {
+  min-height: 100vh;
+}
+
+.home {
+  min-height: 90vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-size: 0.7rem;
+  }
+}
