@@ -1,0 +1,21 @@
+.about-container {
+  display: flex;
+  margin: 45px 0;
+  width: 100%;
+
+  about-img {
+    display: flex;
+    margin-right: 30px;
+    width: 150%;
+  }
+
+  about-text {
+    display: flex;
+    width: 60%;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

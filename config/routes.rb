@@ -8,9 +8,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "pages#home"
 
-  get '/about', to: 'pages#about'
-  get '/projects', to: 'pages#projects'
-  get '/contact', to: 'pages#contact'
-
   resources :contact_form, only: %i[new create]
 end

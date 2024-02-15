@@ -5,9 +5,18 @@ body {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 
+    h1 {
+      font-size: 3.2rem;
+    }
+
     h2 {
       display: flex;
-      font-size: 3.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
+      justify-content: center;
+    }
+
+    a {
+      text-decoration: none;
     }
 }
