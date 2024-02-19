@@ -30,6 +30,7 @@
     ul {
       display: flex;
       list-style-type: none;
+      padding-left: 0;
     }
 
     li {
@@ -37,4 +38,15 @@
       font-size: 4rem;
       font-weight: 400;
     }
+}
+
+.to-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+a:hover {
+  transform: scale(1.2);
 }

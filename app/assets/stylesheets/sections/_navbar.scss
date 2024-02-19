@@ -12,3 +12,7 @@
 .header {
   min-height: 10vh;
 }
+
+#home, #about-me, #my-skills, #projects, #contact {
+  scroll-behavior: smooth;
+}

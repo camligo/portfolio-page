@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   margin: 6% auto;
+  justify-content: center;
+  padding-left: 0;
 }
 
 .skills-title {
@@ -9,16 +11,16 @@
   flex-basis: 23%;
   margin: 10px;
   padding: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-logos {
   li {
     list-style: none;
   }
+}
 
-  span {
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
-  }
+i {
+ font-size: 4rem;
 }

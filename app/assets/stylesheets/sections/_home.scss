@@ -2,7 +2,7 @@
   min-height: 100vh;
 }
 
-.home {
+.welcome {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -16,4 +16,8 @@
   p {
     font-size: 0.7rem;
   }
+}
+
+.spacer {
+  height: 20vh;
 }
