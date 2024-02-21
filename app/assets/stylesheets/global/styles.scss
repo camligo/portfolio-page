@@ -15,9 +15,12 @@ body {
       margin-bottom: 1rem;
       justify-content: center;
       text-transform: uppercase;
+      text-decoration: underline #ff9100;
+      text-underline-offset: 12px;
     }
 
     a {
       text-decoration: none;
+      color: black;
     }
 }

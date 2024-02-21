@@ -1,21 +1,27 @@
 .about-container {
-  display: flex;
+  display: grid;
   margin: 45px 0;
   width: 100%;
 
   .about-img {
     display: flex;
-    margin-right: 30px;
-    width: 150%;
   }
 
   .about-text {
     display: flex;
-    width: 60%;
+    flex-direction: column;
   }
 }
 
 img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 812px) {
+  .about-container {
+    gap: 3rem;
+    grid-template-columns: 400px 1fr;
+  }
 }

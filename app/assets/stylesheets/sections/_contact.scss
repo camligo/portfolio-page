@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1180px;
-  margin: 0 auto;
+  margin-inline: auto;
   width: 90%;
 }
 
@@ -49,4 +49,5 @@
 
 a:hover {
   transform: scale(1.2);
+  color: #ff9100;
 }
