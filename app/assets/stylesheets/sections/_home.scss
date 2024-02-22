@@ -1,9 +1,11 @@
 .about, .projects, .contact, .skills {
   min-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .welcome {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +26,29 @@
   justify-content: center;
 }
 
-#scroll {
+#arrow-down {
   font-size: 30px;
+}
+
+#home {
+  text-align: left;
+}
+
+#typewriter {
+  color: #ff9100;
+  font-weight: bold;
+}
+
+#cursor {
+  color: #ff9100;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
 }

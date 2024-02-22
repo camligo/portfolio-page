@@ -1,8 +1,12 @@
 body {
+  height: 100vh;
+  padding: 20px 50px;
   font-family: "Sen", "Serif";
   font-size: 1.2rem;
   line-height: 1.6;
   letter-spacing: 1.5px;
+  background: #ebeef3;
+  text-align: center;
 
     h1 {
       font-size: 3.2rem;
@@ -13,6 +17,7 @@ body {
       display: flex;
       font-size: 2.8rem;
       margin-bottom: 1rem;
+      margin-top: 1rem;
       justify-content: center;
       text-transform: uppercase;
       text-decoration: underline #ff9100;
