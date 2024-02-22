@@ -20,4 +20,10 @@
 
 .spacer {
   min-height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+#scroll {
+  font-size: 30px;
 }
