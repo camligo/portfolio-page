@@ -1,8 +1,14 @@
 <!--Navigation-->
 <header>
   <div class="wrapper">
+
+  <i id="mobile-nav-toggle" class="fa-solid fa-bars" aria-controls="nav-primary" aria-expanded="false">
+<!-- <i class="fa-solid fa-xmark"></i> -->
+    <span class="sr-only">Menu</span>
+  </i>
+
     <nav>
-      <ul class="navbar-top">
+      <ul id="nav-primary" data-visible="false" class="navbar-top">
         <li><a href="#home">Home</a></li>
         <li><a href="#about-me">About</a></li>
         <li><a href="#my-skills">Skills</a></li>
@@ -10,27 +16,28 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </div>
 
-<!--Home-->
-  <section class="welcome" id="top">
-    <div class="wrapper">
-      <h1 id="home">
-        <span>Hi, I'm Camilla 👋</span>
-        <br>
-        <span>I'm <span id="typewriter"></span></span>
-        <span id="cursor">|</span>
-        <br>
-      </h1>
-    </div>
-  </section>
-
-  <div class="spacer">
-    <div class="arrow-down">
-      <i class="fa-solid fa-chevron-down" id="arrow-down"></i>
-    </div>
   </div>
 </header>
+
+<!--Home-->
+<section class="welcome" id="top">
+  <div class="wrapper">
+    <h1 id="home">
+      <span>Hi, I'm Camilla 👋</span>
+      <br>
+      <span>I'm <span id="typewriter"></span></span>
+      <span id="cursor">|</span>
+      <br>
+    </h1>
+  </div>
+</section>
+
+<div class="spacer">
+  <div class="arrow-down">
+    <i class="fa-solid fa-chevron-down" id="arrow-down"></i>
+  </div>
+</div>
 
 <!--About-->
 <section class="about" id="about-me">

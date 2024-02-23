@@ -4,6 +4,15 @@
   margin: 6% auto;
   justify-content: center;
   gap: 3rem;
+
+  i {
+    font-size: 4rem;
+  }
+
+  i:hover {
+    color: #ff9100;
+    transition: 0.1s ease;
+  }
 }
 
 .skills-title {
@@ -20,13 +29,3 @@
     list-style: none;
   }
 }
-
-i {
- font-size: 4rem;
-}
-
-i:hover {
-  color: #ff9100;
-  transition: 0.1s ease;
-}
-

@@ -29,6 +29,32 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
+// Hamburger menu
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.getElementById('mobile-nav-toggle');
+
+  function changeIcon(icon) {
+      icon.classList.toggle("fa-bars");
+      icon.classList.toggle("fa-xmark");
+  }
+
+  navToggle.addEventListener('click', function() {
+      const primaryNav = document.querySelector('.navbar-top');
+      const visibility = primaryNav.getAttribute('data-visible');
+
+      if (visibility === "false") {
+          primaryNav.setAttribute('data-visible', "true");
+          navToggle.setAttribute('aria-expanded', "true");
+          changeIcon(navToggle);
+      } else if (visibility === "true") {
+          primaryNav.setAttribute('data-visible', "false");
+          navToggle.setAttribute('aria-expanded', "false");
+          changeIcon(navToggle);
+      }
+  });
+});
+
+
 // Arrow down
 
 document.addEventListener('DOMContentLoaded', function() {
