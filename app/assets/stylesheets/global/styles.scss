@@ -1,26 +1,28 @@
 html {
+  display: block;
   scroll-behavior: smooth;
-}
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
 
-body {
-  height: 100vh;
-  padding: 20px 50px;
-  font-family: "Sen", "Serif";
-  font-size: 1.2rem;
-  line-height: 1.6;
-  letter-spacing: 1.5px;
-  background: #ebeef3;
-  text-align: center;
-  overflow-x: hidden;
+  body {
+    display: block;
+    overflow-x: hidden;
+    font-family: "Sen", "Serif";
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    background: #ebeef3;
+    text-align: center;
 
     h1 {
       text-transform: uppercase;
-      font-size: 3.2rem;
+      font-size: 3rem;
     }
 
     h2 {
       display: flex;
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       margin-bottom: 1rem;
       margin-top: 1rem;
       justify-content: center;
@@ -33,11 +35,12 @@ body {
       text-decoration: none;
       color: black;
     }
+  }
 }
 
 .wrapper {
   max-width: 1180px;
-  margin-inline: auto;
+  margin: 0 auto;
   width: 90%;
 }
 

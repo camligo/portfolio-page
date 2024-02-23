@@ -16,7 +16,7 @@
 }
 
 
-@media (max-width: 812px) {
+@media (max-width: 780px) {
   .navbar-top {
     position: fixed;
     z-index: 1000;
@@ -40,7 +40,6 @@
     }
   }
 
-
   .navbar-top a {
     margin-inline-end: 0;
   }
@@ -55,7 +54,7 @@
   }
 }
 
-@media (min-width: 813px) {
+@media (min-width: 780px) {
   #mobile-nav-toggle {
     display: none;
   }
