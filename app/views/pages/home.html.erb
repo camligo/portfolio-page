@@ -2,36 +2,36 @@
 
 <!--Home-->
 <header>
-  <div class="wrapper">
-    <nav>
-      <ul id="nav-primary" data-visible="false" class="navbar-top">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#my-skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="wrapper">
+        <nav>
+          <ul id="nav-primary" data-visible="false" class="navbar-top">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#my-skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
 
-      <!--Hamburger menu-->
-      <div class="hamburger-menu">
-        <i id="mobile-nav-toggle" class="fa-solid fa-bars" aria-controls="nav-primary" aria-expanded="false">
-          <!-- <i class="fa-solid fa-xmark"></i> -->
-          <span class="sr-only">Menu</span>
-        </i>
+          <!--Hamburger menu-->
+          <div class="hamburger-menu">
+            <i id="mobile-nav-toggle" class="fa-solid fa-bars" aria-controls="nav-primary" aria-expanded="false">
+              <!-- <i class="fa-solid fa-xmark"></i> -->
+              <span class="sr-only">Menu</span>
+            </i>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
 
   <section class="welcome" id="top">
-    <div class="wrapper">
-      <h1 id="home">
-        <span>Hi, I'm Camilla 👋</span>
-        <br>
-        <span>I'm <span id="typewriter"></span></span>
-        <span id="cursor">|</span>
-        <br>
-      </h1>
-    </div>
+      <div class="wrapper">
+        <h1 id="home">
+          <span>Hi, I'm Camilla 👋</span>
+          <br>
+          <span>I'm <span id="typewriter"></span></span>
+          <span id="cursor">|</span>
+          <br>
+        </h1>
+      </div>
   </section>
 </header>
 
@@ -50,7 +50,7 @@
       </div>
       <div class="about-container">
         <div class="about-img">
-          <img src="https://avatars.githubusercontent.com/u/142923565?v=4" alt="Camilla">
+          <img src="/camilla.jpg" alt="Camilla">
         </div>
         <div class="about-text">
           <p>Hello World! I'm Camilla, a Full Stack Web Developer from Sweden now based in Sydney.</p>
@@ -129,6 +129,7 @@
         <h2>Projects</h2>
         <p>Skills grow - so will this portfolio.</p>
       </div>
+      <img src="swapt_outfit_feed.png" alt="Mockup of iPhone 12 showing frame of Swapt's outfit feed">
     </div>
     <div class="spacer"></div>
   </section>
@@ -136,29 +137,18 @@
   <!--Contact-->
   <section class="contacts" id="contact">
     <div class="wrapper">
-      <h2>Contact me</h2>
+      <h2>Get in touch</h2>
         <div class="form-container">
-          <div class="form-input">
-            <%= form_with scope: :contact_form, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
-              <div class="form-group">
-                <%= form.text_field :name, class: "form-control", placeholder: "Your name" %>
-              </div>
-              <div class="form-group">
-                <%= form.email_field :email, class: "form-control", placeholder: "Your email" %>
-              </div>
-              <div class="form-group">
-                <%= form.text_area :message, class: "form-control", placeholder: "Your message" %>
-              </div>
-              <%= form.submit "Get in touch", class: "btn btn-primary" %>
-            <% end %>
-          </div>
-
           <div class="form-text">
             <p>If you have any questions about me or my projects, don't hesitate to reach out!</p>
-            <br>
-            <p>I'm available to grab a coffee and chat! Drop a comment, question, feedback, or your favourite Spotify playlist. Thanks for stopping by!</p>
-            <br>
-            <p>Straight shot to my inbox: camilla.ligovic@gmail.com</p>
+            <p>I'm available to grab a coffee and chat - drop a comment, question or feedback in the form below.</p>
+          </div>
+          <div class="form-input">
+            <%= render "/contact_form/new" %>
+          </div>
+          <div class="form-text">
+            <p>You can also reach me by sending an email to: camilla.ligovic@gmail.com</p>
+            <p>Thanks for stopping by!</p>
           </div>
         </div>
         <div class="socials">
@@ -185,3 +175,5 @@
     </div>
   </div>
 </footer>
+
+<!--Thanks to Previewed for the mockup frames: https://previewed.app/ -->

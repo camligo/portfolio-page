@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: 6% auto;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 0;
 
   i {
     font-size: 4rem;

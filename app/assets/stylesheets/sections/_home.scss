@@ -5,7 +5,7 @@
 }
 
 .welcome {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,9 +21,7 @@
 }
 
 .spacer {
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
+  min-height: 10vh;
 }
 
 #arrow-down {

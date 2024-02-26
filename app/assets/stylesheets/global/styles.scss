@@ -5,11 +5,17 @@ html {
   padding: 0;
   min-width: fit-content;
 
+  header {
+    display: block;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 10vh;
+  }
+
   body {
     display: block;
     overflow-x: hidden;
     font-family: "Sen", "Serif";
-    font-size: 1.2rem;
     line-height: 1.6;
     letter-spacing: 1.5px;
     background: #ebeef3;
@@ -17,12 +23,12 @@ html {
 
     h1 {
       text-transform: uppercase;
-      font-size: 3rem;
+      font-size: 36px;
     }
 
     h2 {
       display: flex;
-      font-size: 2.6rem;
+      font-size: 30px;
       margin-bottom: 1rem;
       margin-top: 1rem;
       justify-content: center;
@@ -34,6 +40,10 @@ html {
     a {
       text-decoration: none;
       color: black;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 }
