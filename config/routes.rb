@@ -7,6 +7,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
-
-  resources :contact_form, only: %i[new create]
 end
