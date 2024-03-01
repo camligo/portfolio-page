@@ -38,21 +38,37 @@ document.addEventListener('DOMContentLoaded', function() {
       icon.classList.toggle("fa-xmark");
   }
 
-  navToggle.addEventListener('click', function() {
-      const primaryNav = document.querySelector('.navbar-top');
-      const visibility = primaryNav.getAttribute('data-visible');
+  function toggleSidebar() {
+    const primaryNav = document.querySelector('.navbar-top');
+    const visibility = primaryNav.getAttribute('data-visible');
 
-      if (visibility === "false") {
-          primaryNav.setAttribute('data-visible', "true");
-          navToggle.setAttribute('aria-expanded', "true");
-          changeIcon(navToggle);
-      } else if (visibility === "true") {
-          primaryNav.setAttribute('data-visible', "false");
-          navToggle.setAttribute('aria-expanded', "false");
-          changeIcon(navToggle);
-      }
+    if (visibility === "false") {
+      primaryNav.setAttribute('data-visible', "true");
+      navToggle.setAttribute('aria-expanded', "true");
+      changeIcon(navToggle);
+    } else if (visibility === "true") {
+      primaryNav.setAttribute('data-visible', "false");
+      navToggle.setAttribute('aria-expanded', "false");
+      changeIcon(navToggle);
+    }
+  }
+
+  navToggle.addEventListener('click', toggleSidebar);
+
+  // Function to handle menu link clicks
+  function handleMenuLinkClick() {
+    toggleSidebar();
+  }
+
+  // All menu links
+  const menuLinks = document.querySelectorAll('.navbar-top a');
+
+  // Add event listener to each menu link
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', handleMenuLinkClick);
   });
 });
+
 
 
 // Arrow down
