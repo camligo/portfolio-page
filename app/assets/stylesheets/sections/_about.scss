@@ -20,6 +20,25 @@
   height: auto;
 }
 
+.socials {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-inline: 20px;
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 780px) {
   .about-container {
     gap: 3rem;

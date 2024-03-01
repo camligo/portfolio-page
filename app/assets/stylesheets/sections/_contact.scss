@@ -53,26 +53,6 @@
   }
 }
 
-.socials {
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  align-items: center;
-
-    ul {
-      display: flex;
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-inline: 20px;
-      font-size: 4rem;
-      font-weight: 400;
-    }
-}
-
 .to-top {
   display: flex;
   justify-content: center;

@@ -15,15 +15,16 @@ html {
   body {
     display: block;
     overflow-x: hidden;
-    font-family: "Sen", "Serif";
     line-height: 1.6;
     letter-spacing: 1.5px;
     background: #ebeef3;
     text-align: center;
+    font-family: "Questrial", sans-serif;
 
     h1 {
       text-transform: uppercase;
       font-size: 42px;
+      font-family: "Sen", "Serif";
     }
 
     h2 {
@@ -35,16 +36,19 @@ html {
       text-transform: uppercase;
       text-decoration: underline #ff9100;
       text-underline-offset: 12px;
+      font-family: "Sen", "Serif";
     }
 
     h3 {
       font-size: 30px;
       text-transform: uppercase;
+      font-family: "Sen", "Serif";
     }
 
     h4 {
       font-size: 22px;
       text-transform: uppercase;
+      font-family: "Sen", "Serif";
     }
 
     a {
