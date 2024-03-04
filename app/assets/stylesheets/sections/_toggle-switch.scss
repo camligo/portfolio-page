@@ -42,6 +42,7 @@
   left: 4px;
   bottom: 4px;
   transition: 0.4s;
+  z-index: 500;
 }
 
 input:checked + .slider {
@@ -58,4 +59,18 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.slider i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fa-sun {
+  left: 7px;
+}
+
+.fa-moon {
+  right: 7px;
 }

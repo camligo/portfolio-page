@@ -82,7 +82,6 @@ function switchTheme() {
 toggleSwitch.addEventListener('change', switchTheme);
 
 // Arrow down
-
 document.addEventListener('DOMContentLoaded', function() {
   const scrollIcon = document.getElementById('arrow-down');
   const aboutSection = document.getElementById('about-me');
@@ -94,7 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Typewriter function
-
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -130,4 +128,5 @@ const typeLoop = async () => {
     }
   }
 };
+
 typeLoop();
