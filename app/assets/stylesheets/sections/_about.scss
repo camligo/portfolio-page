@@ -35,14 +35,31 @@
 
   li {
     margin-inline: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .about-container {
     gap: 3rem;
     grid-template-columns: 400px 1fr;
   }
 
+  .socials {
+    justify-content: flex-start;
+  }
+
+  #socials-bottom {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #intro {
+    margin-top: 1rem;
+  }
+
+  .about-text p {
+    text-align: center;
+  }
 }

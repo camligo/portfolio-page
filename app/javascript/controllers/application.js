@@ -60,16 +60,26 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleSidebar();
   }
 
-  // All menu links
   const menuLinks = document.querySelectorAll('.navbar-top a');
 
-  // Add event listener to each menu link
   menuLinks.forEach(function(link) {
     link.addEventListener('click', handleMenuLinkClick);
   });
 });
 
+// Dark theme switch
 
+const toggleSwitch = document.getElementById('mode-toggle');
+
+function switchTheme() {
+  if (toggleSwitch.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+}
+
+toggleSwitch.addEventListener('change', switchTheme);
 
 // Arrow down
 

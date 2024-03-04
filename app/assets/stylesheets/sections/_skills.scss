@@ -1,32 +1,50 @@
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 6% auto;
+  margin-top: 3rem;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 1rem;
   padding: 0;
-
-  i {
-    font-size: 4rem;
-  }
-
-  i:hover {
-    color: #ff9100;
-    transition: 0.1s ease;
-  }
 }
 
 .skills-title {
+  flex: 0 1 calc(25% - 2rem);
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  flex-basis: 20%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-title p {
+  margin-top: 0.5rem
+}
+
+.skills-title i {
+  font-size: 4rem;
+}
+
+.skills-title i:hover {
+  color: #ff9100;
+  transition: 0.1s ease;
 }
 
 .skills-logos {
   li {
     list-style: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-title {
+    flex: 0 1 calc(33.33% - 2rem);
+  }
+
+  .skills-title i {
+    font-size: 3rem;
+  }
+
+  .skills-title p {
+    font-size: 14px;
   }
 }

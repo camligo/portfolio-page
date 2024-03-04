@@ -2,25 +2,25 @@
 
 <!--Home-->
 <header>
-      <div class="wrapper">
-        <nav>
-          <ul id="nav-primary" data-visible="false" class="navbar-top">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#my-skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+  <div class="wrapper">
+    <nav>
+      <ul id="nav-primary" data-visible="false" class="navbar-top">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#my-skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-          <!--Hamburger menu-->
-          <div class="hamburger-menu">
-            <i id="mobile-nav-toggle" class="fa-solid fa-bars" aria-controls="nav-primary" aria-expanded="false">
-              <!-- <i class="fa-solid fa-xmark"></i> -->
-              <span class="sr-only">Menu</span>
-            </i>
-          </div>
-        </nav>
+      <!--Hamburger menu-->
+      <div class="hamburger-menu">
+        <i id="mobile-nav-toggle" class="fa-solid fa-bars" aria-controls="nav-primary" aria-expanded="false">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+          <span class="sr-only">Menu</span>
+        </i>
       </div>
+    </nav>
+  </div>
 
   <section class="welcome" id="top">
     <div class="wrapper">
@@ -32,15 +32,23 @@
         <br>
       </h1>
     </div>
-  </section>
-</header>
 
-<main>
+    <!-- Dark mode toggle switch -->
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle"/>
+        <span class="slider"></i></span>
+      </label>
+    </div>
+  </section>
   <div class="spacer">
     <div class="arrow-down">
       <i class="fa-solid fa-chevron-down" id="arrow-down"></i>
     </div>
   </div>
+</header>
+
+<main>
 
   <!--About-->
   <section class="about" id="about-me">
@@ -53,7 +61,7 @@
           <img src="/camilla.jpg" alt="Camilla" id="profile-img">
         </div>
         <div class="about-text">
-          <p>Hey there!</p>
+          <p id="intro">Hey there!</p>
           <p>Thanks for stopping by my portfolio.</p>
           <p>I'm Camilla, a budding full-stack web developer who recently wrapped up a web development bootcamp and made the leap all the way from Sweden to Sydney.</p>
           <p>With skills in HTML, CSS, JavaScript and Ruby on Rails, I'm keen to dive into the right gig where I can keep learning and growing.</p>
@@ -229,17 +237,15 @@
   <section class="contacts" id="contact">
     <div class="wrapper">
       <h2>Get in touch</h2>
-      <div class="form-container">
-        <div class="form-text">
-          <p>If you have any questions about me or my projects, don't hesitate to reach out!</p>
-          <p>I'm available to grab a coffee and chat - drop a comment, question or feedback to: <span><a href="mailto:camilla.ligovic@gmail.com?subject=Getting%20in%20touch%20with%20Camilla%20Ligovic" target="_blank">camilla.ligovic@gmail.com</a></span></p>
-          <p>Thanks for stopping by!</p>
-          <div class="socials">
-            <ul>
-              <li><a href="https://www.linkedin.com/in/camilla-ligovic/" target="_blank" class="fa-brands fa-linkedin"></a></li>
-              <li><a href="https://github.com/camligo" target="_blank" class="fa-brands fa-github"></a></li>
-            </ul>
-          </div>
+      <div class="contact-text">
+        <p>If you have any questions about me or my projects, don't hesitate to reach out!</p>
+        <p>I'm available to grab a coffee and chat - drop a comment, question or feedback to: <span><a href="mailto:camilla.ligovic@gmail.com?subject=Getting%20in%20touch%20with%20Camilla%20Ligovic" target="_blank">camilla.ligovic@gmail.com</a></span></p>
+        <p>Thanks for stopping by!</p>
+        <div class="socials" id="socials-bottom">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/camilla-ligovic/" target="_blank" class="fa-brands fa-linkedin"></a></li>
+            <li><a href="https://github.com/camligo" target="_blank" class="fa-brands fa-github"></a></li>
+          </ul>
         </div>
       </div>
 
